@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 14100;
 
 app.get('/data', (req, res) => {
   const data = {
@@ -10,6 +9,3 @@ app.get('/data', (req, res) => {
   res.json(data);
 });
 
-app.listen(port, () => {
-  console.log(`Server is running at :${port}`);
-});
